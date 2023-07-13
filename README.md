@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://aditya-calculator-app.netlify.app)
+- Live Site URL: [Add live site URL here](https://adityan-calculator-app.netlify.app)
 
 ### Built with
 
