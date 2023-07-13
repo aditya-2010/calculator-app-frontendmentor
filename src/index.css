@@ -1,13 +1,332 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+:root {
+  color-scheme: light;
+  /* theme 1 - dark */
+  --bg-main-dark: hsl(222, 26%, 31%);
+  --bg-output-dark: hsl(224, 36%, 15%);
+  --bg-keys-dark: hsl(223, 31%, 20%);
+
+  --btn-primary-dark: hsl(30, 25%, 89%);
+  --shadow-primary-dark: hsl(28, 16%, 65%);
+  --btn-secondary-dark: hsl(225, 21%, 49%);
+  --shadow-secondary-dark: hsl(224, 28%, 35%);
+  --btn-tertiary-dark: hsl(6, 63%, 50%);
+  --shadow-tertiary-dark: hsl(6, 70%, 34%);
+
+  --text-dark: hsl(0, 0%, 100%);
+  --primary-text-dark: hsl(221, 14%, 31%);
+
+  /* theme 2 - light */
+  --bg-main-light: hsl(0, 0%, 90%);
+  --bg-output-light: hsl(0, 0%, 93%);
+  --bg-keys-light: hsl(0, 5%, 81%);
+
+  --btn-primary-light: hsl(45, 7%, 89%);
+  --shadow-primary-light: hsl(35, 11%, 61%);
+  --btn-secondary-light: hsl(185, 42%, 37%);
+  --shadow-secondary-light: hsl(185, 58%, 25%);
+  --btn-tertiary-light: hsl(25, 98%, 40%);
+  --shadow-tertiary-light: hsl(25, 99%, 27%);
+
+  --text-light: black;
+  --primary-text-light: hsl(60, 10%, 19%);
+
+  /* theme 3 - violet-theme */
+  --bg-main-violet: hsl(268, 75%, 9%);
+  --bg-output-violet: hsl(268, 71%, 12%);
+  --bg-keys-violet: hsl(268, 71%, 12%);
+
+  --btn-primary-violet: hsl(268, 47%, 21%);
+  --shadow-primary-violet: hsl(290, 70%, 36%);
+  --btn-secondary-violet: hsl(281, 89%, 26%);
+  --shadow-secondary-violet: hsl(285, 91%, 52%);
+  --btn-tertiary-violet: hsl(176, 100%, 44%);
+  --shadow-tertiary-violet: hsl(177, 92%, 70%);
+
+  --text-violet: hsl(0, 0%, 100%);
+  --primary-text-violet: hsl(52, 100%, 62%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media(prefers-color-scheme: dark) {
+  :root {
+    --bg-main: var(--bg-main-dark);
+    --bg-output: var(--bg-output-dark);
+    --bg-keys: var(--bg-keys-dark);
+  
+    --btn-primary: var(--btn-primary-dark);
+    --shadow-primary: var(--shadow-primary-dark);
+    --btn-secondary: var(--btn-secondary-dark);
+    --shadow-secondary: var(--shadow-secondary-dark);
+    --btn-tertiary: var(--btn-tertiary-dark);
+    --shadow-tertiary: var(--shadow-tertiary-dark);
+  
+    --text:  var(--text-dark);
+    --primary-text: var(--primary-text-dark);
+  }
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --bg-main: var(--bg-main-light);
+    --bg-output: var(--bg-output-light);
+    --bg-keys: var(--bg-keys-light);
+
+    --btn-primary: var(--btn-primary-light);
+    --shadow-primary: var(--shadow-primary-light);
+    --btn-secondary: var(--btn-secondary-light);
+    --shadow-secondary: var(--shadow-secondary-light);
+    --btn-tertiary: var(--btn-tertiary-light);
+    --shadow-tertiary: var(--shadow-tertiary-light);
+
+    --text:  var(--text-light);
+    --primary-text: var(--primary-text-light);
+  }
+}
+
+@media(prefers-color-scheme: violet) {
+  :root {
+    --bg-main: var(--bg-main-violet);
+  --bg-output: var(--bg-output-violet);
+  --bg-keys: var(--bg-keys-violet);
+
+  --btn-primary: var(--btn-primary-violet);
+  --shadow-primary: var(--shadow-primary-violet);
+  --btn-secondary: var(--btn-secondary-violet);
+  --shadow-secondary: var(--shadow-secondary-violet);
+  --btn-tertiary: var(--btn-tertiary-violet);
+  --shadow-tertiary: var(--shadow-tertiary-violet);
+
+  --text:  var(--text-violet);
+  --primary-text: var(--primary-text-violet);
+  }
+}
+
+:root[color-scheme= 'dark'] {
+  --bg-main: var(--bg-main-dark);
+  --bg-output: var(--bg-output-dark);
+  --bg-keys: var(--bg-keys-dark);
+
+  --btn-primary: var(--btn-primary-dark);
+  --shadow-primary: var(--shadow-primary-dark);
+  --btn-secondary: var(--btn-secondary-dark);
+  --shadow-secondary: var(--shadow-secondary-dark);
+  --btn-tertiary: var(--btn-tertiary-dark);
+  --shadow-tertiary: var(--shadow-tertiary-dark);
+
+  --text:  var(--text-dark);
+  --primary-text: var(--primary-text-dark);
+}
+
+:root[color-scheme= 'light'] {
+  --bg-main: var(--bg-main-light);
+  --bg-output: var(--bg-output-light);
+  --bg-keys: var(--bg-keys-light);
+
+  --btn-primary: var(--btn-primary-light);
+  --shadow-primary: var(--shadow-primary-light);
+  --btn-secondary: var(--btn-secondary-light);
+  --shadow-secondary: var(--shadow-secondary-light);
+  --btn-tertiary: var(--btn-tertiary-light);
+  --shadow-tertiary: var(--shadow-tertiary-light);
+
+  --text:  var(--text-light);
+  --primary-text: var(--primary-text-light);
+}
+
+:root[color-scheme= 'violet'] {
+  --bg-main: var(--bg-main-violet);
+  --bg-output: var(--bg-output-violet);
+  --bg-keys: var(--bg-keys-violet);
+
+  --btn-primary: var(--btn-primary-violet);
+  --shadow-primary: var(--shadow-primary-violet);
+  --btn-secondary: var(--btn-secondary-violet);
+  --shadow-secondary: var(--shadow-secondary-violet);
+  --btn-tertiary: var(--btn-tertiary-violet);
+  --shadow-tertiary: var(--shadow-tertiary-violet);
+
+  --text:  var(--text-violet);
+  --primary-text: var(--primary-text-violet);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text);
+  background-color: var(--bg-main);
+  font-weight: 700;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.calculator {
+  height: 100vh;
+  width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.8rem;
+}
+
+.theme {
+  font-size: .75rem;
+}
+
+.output {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 9px;
+  margin-bottom: 1.5rem;
+  /* word-wrap: break-word; */
+  word-break: break-all;
+  background-color: var(--bg-output);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.current-operand {
+  font-size: 3.4rem;
+}
+
+.calc-grid {
+  padding: 2rem;
+  background-color: var(--bg-keys);
+  border-radius: 9px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5, 60px);
+  gap: 1.5rem;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+button {
+  font-family: inherit;
+  font-weight: inherit;
+  border: none;
+  border-radius: 6px;
+  font-size: 2.4rem;
+  cursor: pointer;
+
+  background-color: var(--btn-primary);
+  color: var(--primary-text);
+  box-shadow: 0 4px 0 0 var(--shadow-primary);
+}
+
+.btn-dark {
+  background-color: var(--btn-secondary);
+  box-shadow: 0 4px 0 0 var(--shadow-secondary);
+  color: var(--text);
+  font-size: 1.6rem;
+}
+
+.btn-equal {
+  background-color: var(--btn-tertiary);
+  box-shadow: 0 4px 0 0 var(--shadow-tertiary);
+  color: var(--text-dark);
+}
+
+/* Theme switcher */
+
+.tw-toggle {
+  width: auto;
+  display: inline-block;
+  padding: 2px 3px;
+  border-radius: 20px;
+  position: relative;
+  background-color: var(--bg-keys);
+}
+
+.theme {
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.tw-toggle label {
+  position: absolute;
+  bottom: 28px;
+  cursor: pointer;
+}
+
+.tw-toggle input {
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[value="violet"] {
+  margin-right: 0;
+}
+
+.tw-toggle span {
+  height: 16px;
+  width: 16px;
+  line-height: 21px;
+  border-radius: 50%;
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.tw-toggle input[value="dark"]:checked ~ span {
+  background: var(--btn-tertiary);
+  top: 3.5px;
+  left: 4px;
+  color: #fff;
+}
+
+.tw-toggle input[value="violet"]:checked ~ span {
+  background: var(--btn-tertiary);
+  top: 3.5px;
+  left: 46px;
+}
+.tw-toggle input[value="light"]:checked ~ span {
+  background: var(--btn-tertiary);
+  top: 3.5px;
+  left: 23px;
+}
+
+@media(max-width: 480px) {
+  .calculator {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .calc-grid {
+    padding: 1.5rem;
+    border-radius: 9px;
+  
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 55px);
+    gap: 1rem;
+  }
 }
