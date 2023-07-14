@@ -7,11 +7,14 @@
   --bg-output-dark: hsl(224, 36%, 15%);
   --bg-keys-dark: hsl(223, 31%, 20%);
 
-  --btn-primary-dark: hsl(30, 25%, 89%);
+  --btn-primary-dark: hsl(30, 14%, 97%);
+  --btn-primary-hover-dark: hsl(0, 0%, 100%);
   --shadow-primary-dark: hsl(28, 16%, 65%);
   --btn-secondary-dark: hsl(225, 21%, 49%);
+  --btn-secondary-hover-dark: hsl(225, 16%, 56%);
   --shadow-secondary-dark: hsl(224, 28%, 35%);
   --btn-tertiary-dark: hsl(6, 63%, 50%);
+  --btn-tertiary-hover-dark: hsl(6, 61%, 60%);
   --shadow-tertiary-dark: hsl(6, 70%, 34%);
 
   --text-dark: hsl(0, 0%, 100%);
@@ -23,10 +26,13 @@
   --bg-keys-light: hsl(0, 5%, 81%);
 
   --btn-primary-light: hsl(45, 7%, 89%);
+  --btn-primary-hover-light: hsl(0, 0%, 96%);
   --shadow-primary-light: hsl(35, 11%, 61%);
   --btn-secondary-light: hsl(185, 42%, 37%);
+  --btn-secondary-hover-light: hsl(186, 29%, 49%);
   --shadow-secondary-light: hsl(185, 58%, 25%);
   --btn-tertiary-light: hsl(25, 98%, 40%);
+  --btn-tertiary-hover-light: hsl(25, 64%, 50%);
   --shadow-tertiary-light: hsl(25, 99%, 27%);
 
   --text-light: black;
@@ -38,10 +44,13 @@
   --bg-keys-violet: hsl(268, 71%, 12%);
 
   --btn-primary-violet: hsl(268, 47%, 21%);
+  --btn-primary-hover-violet: hsl(268, 35%, 37%);
   --shadow-primary-violet: hsl(290, 70%, 36%);
   --btn-secondary-violet: hsl(281, 89%, 26%);
+  --btn-secondary-hover-violet: hsl(281, 61%, 44%);
   --shadow-secondary-violet: hsl(285, 91%, 52%);
   --btn-tertiary-violet: hsl(176, 100%, 44%);
+  --btn-tertiary-hover-violet: hsl(176, 79%, 81%);
   --shadow-tertiary-violet: hsl(177, 92%, 70%);
 
   --text-violet: hsl(0, 0%, 100%);
@@ -55,10 +64,13 @@
     --bg-keys: var(--bg-keys-dark);
   
     --btn-primary: var(--btn-primary-dark);
+    --btn-primary-hover: var(--btn-primary-hover-dark);
     --shadow-primary: var(--shadow-primary-dark);
     --btn-secondary: var(--btn-secondary-dark);
+    --btn-secondary-hover: var(--btn-secondary-hover-dark);
     --shadow-secondary: var(--shadow-secondary-dark);
     --btn-tertiary: var(--btn-tertiary-dark);
+    --btn-tertiary-hover: var(--btn-tertiary-hover-dark);
     --shadow-tertiary: var(--shadow-tertiary-dark);
   
     --text:  var(--text-dark);
@@ -73,10 +85,13 @@
     --bg-keys: var(--bg-keys-light);
 
     --btn-primary: var(--btn-primary-light);
+    --btn-primary-hover: var(--btn-primary-hover-light);
     --shadow-primary: var(--shadow-primary-light);
     --btn-secondary: var(--btn-secondary-light);
+    --btn-secondary-hover: var(--btn-secondary-hover-light);
     --shadow-secondary: var(--shadow-secondary-light);
     --btn-tertiary: var(--btn-tertiary-light);
+    --btn-tertiary-hover: var(--btn-tertiary-hover-light);
     --shadow-tertiary: var(--shadow-tertiary-light);
 
     --text:  var(--text-light);
@@ -91,10 +106,13 @@
   --bg-keys: var(--bg-keys-violet);
 
   --btn-primary: var(--btn-primary-violet);
+  --btn-primary-hover: var(--btn-primary-hover-violet);
   --shadow-primary: var(--shadow-primary-violet);
   --btn-secondary: var(--btn-secondary-violet);
+  --btn-secondary-hover: var(--btn-secondary-hover-violet);
   --shadow-secondary: var(--shadow-secondary-violet);
   --btn-tertiary: var(--btn-tertiary-violet);
+  --btn-tertiary-hover: var(--btn-tertiary-hover-violet);
   --shadow-tertiary: var(--shadow-tertiary-violet);
 
   --text:  var(--text-violet);
@@ -108,10 +126,13 @@
   --bg-keys: var(--bg-keys-dark);
 
   --btn-primary: var(--btn-primary-dark);
+  --btn-primary-hover: var(--btn-primary-hover-dark);
   --shadow-primary: var(--shadow-primary-dark);
   --btn-secondary: var(--btn-secondary-dark);
+  --btn-secondary-hover: var(--btn-secondary-hover-dark);
   --shadow-secondary: var(--shadow-secondary-dark);
   --btn-tertiary: var(--btn-tertiary-dark);
+  --btn-tertiary-hover: var(--btn-tertiary-hover-dark);
   --shadow-tertiary: var(--shadow-tertiary-dark);
 
   --text:  var(--text-dark);
@@ -124,10 +145,13 @@
   --bg-keys: var(--bg-keys-light);
 
   --btn-primary: var(--btn-primary-light);
+  --btn-primary-hover: var(--btn-primary-hover-light);
   --shadow-primary: var(--shadow-primary-light);
   --btn-secondary: var(--btn-secondary-light);
+  --btn-secondary-hover: var(--btn-secondary-hover-light);
   --shadow-secondary: var(--shadow-secondary-light);
   --btn-tertiary: var(--btn-tertiary-light);
+  --btn-tertiary-hover: var(--btn-tertiary-hover-light);
   --shadow-tertiary: var(--shadow-tertiary-light);
 
   --text:  var(--text-light);
@@ -140,10 +164,13 @@
   --bg-keys: var(--bg-keys-violet);
 
   --btn-primary: var(--btn-primary-violet);
+  --btn-primary-hover: var(--btn-primary-hover-violet);
   --shadow-primary: var(--shadow-primary-violet);
   --btn-secondary: var(--btn-secondary-violet);
+  --btn-secondary-hover: var(--btn-secondary-hover-violet);
   --shadow-secondary: var(--shadow-secondary-violet);
   --btn-tertiary: var(--btn-tertiary-violet);
+  --btn-tertiary-hover: var(--btn-tertiary-hover-violet);
   --shadow-tertiary: var(--shadow-tertiary-violet);
 
   --text:  var(--text-violet);
@@ -161,6 +188,7 @@ body {
   background-color: var(--bg-main);
   font-weight: 700;
   font-family: 'League Spartan', sans-serif;
+  transition: all 0.5s;
 }
 
 .calculator {
@@ -230,10 +258,15 @@ button {
   border-radius: 6px;
   font-size: 2.4rem;
   cursor: pointer;
+  transition: all 0.3s;
 
   background-color: var(--btn-primary);
   color: var(--primary-text);
   box-shadow: 0 4px 0 0 var(--shadow-primary);
+}
+
+button:hover {
+  background-color: var(--btn-primary-hover);
 }
 
 .btn-dark {
@@ -243,10 +276,18 @@ button {
   font-size: 1.6rem;
 }
 
+.btn-dark:hover {
+  background-color: var(--btn-secondary-hover);
+}
+
 .btn-equal {
   background-color: var(--btn-tertiary);
   box-shadow: 0 4px 0 0 var(--shadow-tertiary);
   color: var(--text-dark);
+}
+
+.btn-equal:hover {
+  background-color: var(--btn-tertiary-hover);
 }
 
 /* Theme switcher */

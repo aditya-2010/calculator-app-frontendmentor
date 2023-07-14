@@ -15,7 +15,7 @@ export default function ThemeSwitcher() {
   }
 
   return (
-    <div className="theme-switcher">
+    <div className="theme-switcher" aria-label="theme switcher">
       <span className="theme">THEME</span>
       <div class="tw-toggle">
         <label htmlFor="dark">1</label>

@@ -30,15 +30,15 @@ function App() {
   }
 
   return (
-    <div className="calculator">
-      <header className="header">
-        <div className="title">calc</div>
+    <div className="calculator" aria-label="container">
+      <header className="header" aria-label="banner">
+        <h1 className="title">calc</h1>
         <ThemeSwitcher />
       </header>
-      <div className="output">
+      <div className="output" aria-label="output">
         <div className="current-operand">{current || "0"}</div>
       </div>
-      <div className="calc-grid">
+      <div className="calc-grid" aria-label="calculator keys">
         <button onClick={() => handleClick("7")}>7</button>
         <button onClick={() => handleClick("8")}>8</button>
         <button onClick={() => handleClick("9")}>9</button>
